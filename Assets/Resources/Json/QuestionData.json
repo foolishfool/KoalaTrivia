@@ -1,0 +1,202 @@
+[
+  {
+    "QuestionID": 1,
+    "QuestionText": "During times of stress, koalas are prone to outbreaks of the disease chlamydia.",
+    "AnswerText": "In some parts of Australia, koala infection rates from the disease chlamydia is as high as 90%. ",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 1
+  },
+  {
+    "QuestionID": 2,
+    "QuestionText": "Koala joeys are born with no hair, no ears, and are blind.",
+    "AnswerText": "It's true! Koala joeys ARE born with no hair, no ears, and are blind!",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 1
+  },
+  {
+    "QuestionID": 3,
+    "QuestionText": "Koalas hug trees to cool down.",
+    "AnswerText": "Koalas actually DO hug trees to keep cool! It's true! Give it a try and see if it works!",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 1
+  },
+  {
+    "QuestionID": 4,
+    "QuestionText": "Koalas have thicker fur on their rump, which provides a cushion when sitting on branches.",
+    "AnswerText": "Koalas DO have thicker fur on their rump! Mother nature's travel cushion!",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 1
+  },
+  {
+    "QuestionID": 5,
+    "QuestionText": "Koalas drink water every day, just like humans.",
+    "AnswerText": "Actually Koalas don't often drink water! They get most of their water from eucalyptus leaves!",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 2
+  },
+  {
+    "QuestionID": 6,
+    "QuestionText": "Koalas have opposable thumbs.",
+    "AnswerText": "It's true! Koalas are like humans. They have two opposable thumbs so that they can firmly hold things.",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 1
+  },
+  {
+    "QuestionID": 7,
+    "QuestionText": "Koalas get high from eucalyptus.",
+    "AnswerText": "Koalas do not get high from eucalyptus. This is a common misconception.",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 2
+  },
+  {
+    "QuestionID": 8,
+    "QuestionText": "Koalas have unique footprints like humans.",
+    "AnswerText": "Koalas DO actually have unique fingerprints, just like humans!",
+    "OptionA": true,
+    "OptionB": false,
+    "OptionC": "",
+    "OptionD": "",
+    "Answer": 1
+  },
+  {
+    "QuestionID": 9,
+    "QuestionText": "When they are first born a koala joey is the size of a...\n",
+    "AnswerText": "Koala joeys are born the size of a jellybean!",
+    "OptionA": "Pea",
+    "OptionB": "Jellybean",
+    "OptionC": "Green bean",
+    "OptionD": "Ping pong ball",
+    "Answer": 2
+  },
+  {
+    "QuestionID": 10,
+    "QuestionText": "You can tell the sex of a koala by looking at their...",
+    "AnswerText": "Look at a Koala's chest to identify the its sex. Male Koalas have a dark brown scent gland in the middle of their chest and female koalas have a plain white chest.",
+    "OptionA": "Ears",
+    "OptionB": "Nose",
+    "OptionC": "Chest",
+    "OptionD": "Rump",
+    "Answer": 3
+  },
+  {
+    "QuestionID": 11,
+    "QuestionText": "The peak koala breeding season in South East Queensland starts in...",
+    "AnswerText": "The peak koala breeding season usually starts in South East Queensland in July.",
+    "OptionA": "June",
+    "OptionB": "July",
+    "OptionC": "August",
+    "OptionD": "September",
+    "Answer": 2
+  },
+  {
+    "QuestionID": 12,
+    "QuestionText": "How many grams of eucalyptus leaves do koalas eat on average a day?\n",
+    "AnswerText": "Koalas on average eat up to 500g of eucalyptus leaves a day.",
+    "OptionA": "300 grams",
+    "OptionB": "400 grams",
+    "OptionC": "500 grams",
+    "OptionD": "600 grams",
+    "Answer": 3
+  },
+  {
+    "QuestionID": 13,
+    "QuestionText": "Koala joeys stay in their mother's pouch until they are around _______-months old.",
+    "AnswerText": "Koala joeys stay in their mother's pouch until they are around 6-months old!",
+    "OptionA": 6,
+    "OptionB": 7,
+    "OptionC": 8,
+    "OptionD": 10,
+    "Answer": 1
+  },
+  {
+    "QuestionID": 14,
+    "QuestionText": "Scientists often refer to a male Koala as a:",
+    "AnswerText": "Scientists often refer to a male Koala as a ‘buck’.",
+    "OptionA": "Stag",
+    "OptionB": "Buck",
+    "OptionC": "Boomer",
+    "OptionD": "Stallion",
+    "Answer": 2
+  },
+  {
+    "QuestionID": 15,
+    "QuestionText": "In Australia there are 900 different species of eucalyptus trees.  How many of these do koalas like to eat?",
+    "AnswerText": "Koalas normally have around 10 species as their main preferred food source.",
+    "OptionA": 10,
+    "OptionB": 100,
+    "OptionC": 500,
+    "OptionD": 900,
+    "Answer": 1
+  },
+  {
+    "QuestionID": 16,
+    "QuestionText": "On average, adult koalas weigh between:",
+    "AnswerText": "The average adult koala weighs 4-9 KG!",
+    "OptionA": "2-7 kilograms",
+    "OptionB": "3-8 kilograms",
+    "OptionC": "4-9 kilograms",
+    "OptionD": "5-10 kilograms",
+    "Answer": 3
+  },
+  {
+    "QuestionID": 17,
+    "QuestionText": "Scientists often refer to a female Koala as a...",
+    "AnswerText": "Scientists often refer to a male Koala as a ‘doe’!",
+    "OptionA": "Doe",
+    "OptionB": "Mare",
+    "OptionC": "Queen",
+    "OptionD": "Hen",
+    "Answer": 1
+  },
+  {
+    "QuestionID": 18,
+    "QuestionText": "The peak koala breeding season in South East Queensland usually ends in...",
+    "AnswerText": "The peak koala breeding season usually ends in South East Queensland in January.",
+    "OptionA": "December",
+    "OptionB": "January",
+    "OptionC": "February",
+    "OptionD": "March",
+    "Answer": 2
+  },
+  {
+    "QuestionID": 19,
+    "QuestionText": "On average how many hours a day does a koala sleep?",
+    "AnswerText": "Koalas sleep between 18 to 22 hours each day.",
+    "OptionA": "12-16",
+    "OptionB": "14-18",
+    "OptionC": "16-20",
+    "OptionD": "18-22",
+    "Answer": "4"
+  },
+  {
+    "QuestionID": 20,
+    "QuestionText": "On average koalas live for ____ years. ",
+    "AnswerText": "The average life span of a Koala is about 10 years.",
+    "OptionA": 6,
+    "OptionB": 8,
+    "OptionC": 10,
+    "OptionD": 12,
+    "Answer": 3
+  }
+]
