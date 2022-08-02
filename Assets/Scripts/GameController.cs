@@ -191,7 +191,7 @@ public class GameController : MonoBehaviour
         if (quetionTimer < 0)
         {
             quetionTimer = 0;
-            TimeOut();
+            //TimeOut();
 
         }
     }

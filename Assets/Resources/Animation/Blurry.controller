@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -4268517073963744225, guid: 87c46dbee68bf7147b721acbf37e5c96,
+  m_Motion: {fileID: -4268517073963744225, guid: e434c7374c151e842bd8a412635f95ae,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -63,7 +63,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 2632839816044518601, guid: 87c46dbee68bf7147b721acbf37e5c96,
+  m_Motion: {fileID: 2632839816044518601, guid: e434c7374c151e842bd8a412635f95ae,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -127,7 +127,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 406898954880783950, guid: 87c46dbee68bf7147b721acbf37e5c96, type: 3}
+  m_Motion: {fileID: 406898954880783950, guid: e434c7374c151e842bd8a412635f95ae, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -182,7 +182,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -6751714884989248931, guid: 87c46dbee68bf7147b721acbf37e5c96,
+  m_Motion: {fileID: -6751714884989248931, guid: e434c7374c151e842bd8a412635f95ae,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -309,7 +309,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -3100369314251171874, guid: 87c46dbee68bf7147b721acbf37e5c96,
+  m_Motion: {fileID: -3100369314251171874, guid: e434c7374c151e842bd8a412635f95ae,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -403,7 +403,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -7222565655859202835, guid: e7aa0f4e839d4a541bebf34a88bcd9e5,
+  m_Motion: {fileID: -7222565655859202835, guid: e434c7374c151e842bd8a412635f95ae,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
