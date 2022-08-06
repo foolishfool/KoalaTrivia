@@ -153,6 +153,7 @@ public class UIManager : MonoBehaviour
     {
         AudioController.Instance.PlayButtonSFX(AudioController.Instance.WinSFX);
         ResultPanel.SetActive(true);
+        GameController.Instance.PlayEndVideoPlayer();
         Endraphic.transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.5f, 5);
         SetInfoForResultPanel();
         QNum2.color = UIManager.Instance.QuestionColor;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43705684, g: 0.484761, b: 0.5650229, a: 1}
+  m_IndirectSpecularColor: {r: 0.43705642, g: 0.48476046, b: 0.5650224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1855,7 +1855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonSFXID: 0
-  HoverColor: {r: 0, g: 0, b: 0, a: 0}
+  HoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &353150704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3050172763924393888, guid: 7f8b45a9f88315748839123c28f6fa9f,
@@ -2628,89 +2628,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &510929893
-MonoBehaviour:
+--- !u!328 &510929893
+VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510929891}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ddbf24ca243ca48912f134d00b60cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: 1
-  URL: https://projectonlinevideos.s3.ap-southeast-2.amazonaws.com/Koala+Start+Screen+Video+Background.mp4
-  fileName: 
-  autoplay: 1
-  loop: 1
-  muted: 1
-  volume: 1
-  playbackSpeed: 1
-  targetTexture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
-  crossOrigin: 1
-  events: 32
-  canplay:
-    m_PersistentCalls:
-      m_Calls: []
-  canplaythrough:
-    m_PersistentCalls:
-      m_Calls: []
-  complete:
-    m_PersistentCalls:
-      m_Calls: []
-  durationchange:
-    m_PersistentCalls:
-      m_Calls: []
-  emptied:
-    m_PersistentCalls:
-      m_Calls: []
-  ended:
-    m_PersistentCalls:
-      m_Calls: []
-  loadeddata:
-    m_PersistentCalls:
-      m_Calls: []
-  loadedmetadata:
-    m_PersistentCalls:
-      m_Calls: []
-  pause:
-    m_PersistentCalls:
-      m_Calls: []
-  play:
-    m_PersistentCalls:
-      m_Calls: []
-  playing:
-    m_PersistentCalls:
-      m_Calls: []
-  progress:
-    m_PersistentCalls:
-      m_Calls: []
-  ratechange:
-    m_PersistentCalls:
-      m_Calls: []
-  seeked:
-    m_PersistentCalls:
-      m_Calls: []
-  seeking:
-    m_PersistentCalls:
-      m_Calls: []
-  stalled:
-    m_PersistentCalls:
-      m_Calls: []
-  suspend:
-    m_PersistentCalls:
-      m_Calls: []
-  timeupdate:
-    m_PersistentCalls:
-      m_Calls: []
-  volumechange:
-    m_PersistentCalls:
-      m_Calls: []
-  waiting:
-    m_PersistentCalls:
-      m_Calls: []
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 2b0c1df7ebeef0d4f9558fa0e7355eee, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: file://D:/UnityProjects/KoalaTrivia/Assets/StreamingAssets/Koala Start Screen
+    Video Background.mp4
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!114 &510929894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2730,7 +2682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
+  m_Texture: {fileID: 8400000, guid: 2b0c1df7ebeef0d4f9558fa0e7355eee, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4973,7 +4925,7 @@ MonoBehaviour:
   Blurry: {fileID: 1387288450}
   CameraPath: {fileID: 1297402501}
   videoPlayer: {fileID: 114725868}
-  StartVideoPlayer: {fileID: 1557615514}
+  StartVideoPlayer: {fileID: 510929893}
   RightNum: 0
   CurrentMoney: 0
   CurrentQuestSequence: 0
@@ -9062,7 +9014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51.5, y: -45.2}
+  m_AnchoredPosition: {x: 51.5, y: -45.200195}
   m_SizeDelta: {x: 124, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198117755
@@ -15762,89 +15714,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1964147805
-MonoBehaviour:
+--- !u!328 &1964147805
+VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964147803}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ddbf24ca243ca48912f134d00b60cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: 1
-  URL: https://projectonlinevideos.s3.ap-southeast-2.amazonaws.com/Koala+Start+Screen+Video+Background.mp4
-  fileName: 
-  autoplay: 1
-  loop: 1
-  muted: 1
-  volume: 1
-  playbackSpeed: 1
-  targetTexture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
-  crossOrigin: 1
-  events: 32
-  canplay:
-    m_PersistentCalls:
-      m_Calls: []
-  canplaythrough:
-    m_PersistentCalls:
-      m_Calls: []
-  complete:
-    m_PersistentCalls:
-      m_Calls: []
-  durationchange:
-    m_PersistentCalls:
-      m_Calls: []
-  emptied:
-    m_PersistentCalls:
-      m_Calls: []
-  ended:
-    m_PersistentCalls:
-      m_Calls: []
-  loadeddata:
-    m_PersistentCalls:
-      m_Calls: []
-  loadedmetadata:
-    m_PersistentCalls:
-      m_Calls: []
-  pause:
-    m_PersistentCalls:
-      m_Calls: []
-  play:
-    m_PersistentCalls:
-      m_Calls: []
-  playing:
-    m_PersistentCalls:
-      m_Calls: []
-  progress:
-    m_PersistentCalls:
-      m_Calls: []
-  ratechange:
-    m_PersistentCalls:
-      m_Calls: []
-  seeked:
-    m_PersistentCalls:
-      m_Calls: []
-  seeking:
-    m_PersistentCalls:
-      m_Calls: []
-  stalled:
-    m_PersistentCalls:
-      m_Calls: []
-  suspend:
-    m_PersistentCalls:
-      m_Calls: []
-  timeupdate:
-    m_PersistentCalls:
-      m_Calls: []
-  volumechange:
-    m_PersistentCalls:
-      m_Calls: []
-  waiting:
-    m_PersistentCalls:
-      m_Calls: []
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: b0ae1158623b2394592a4a3fc65dec9a, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: file://D:/UnityProjects/KoalaTrivia/Assets/StreamingAssets/Koala Start Screen
+    Video Background.mp4
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!114 &1964147806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15864,7 +15768,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
+  m_Texture: {fileID: 8400000, guid: b0ae1158623b2394592a4a3fc65dec9a, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -15914,7 +15818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 122.59961, y: -34.2}
+  m_AnchoredPosition: {x: 122.59961, y: -34.200195}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2048678764
