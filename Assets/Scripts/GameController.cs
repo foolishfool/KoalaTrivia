@@ -88,7 +88,7 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        // IntializeVideoPlayer();
+         IntializeVideoPlayer();
 
 
 
@@ -163,8 +163,8 @@ public class GameController : MonoBehaviour
         // GetCurrentAvailableIndex(EasyQuestionPool, currentAvailableEasyIndex);
         //GetCurrentAvailableIndex(MediumQuestionPool, currentAvailableMediumIndex);
         //GetCurrentAvailableIndex(HardQuestionPool, currentAvailableHardIndex);
-        // StartVideoPlayer.Play();
-        //  IntializeVideoPlayer();
+        //StartVideoPlayer.Play();
+        //IntializeVideoPlayer();
 
         //used for wb start video play automatically
         // UIManager.Instance.StartBg.onClick.Invoke();
@@ -310,11 +310,15 @@ public class GameController : MonoBehaviour
     }
     private void IntializeVideoPlayer()
     {
-        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video Screen Background.mp4");
-        StartVideoPlayer.url = Path.Combine(Application.streamingAssetsPath, "ATS Start Screen.mp4");
+        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Koala Start Screen Video Background.mp4");
+        StartVideoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Koala Start Screen Video Background.mp4");
+       
         StartVideoPlayer.playOnAwake = true;
         StartVideoPlayer.isLooping = true;
         StartVideoPlayer.Play();
+        videoPlayer.playOnAwake = true;
+        videoPlayer.isLooping = true;
+        videoPlayer.Play();
 
     }
 

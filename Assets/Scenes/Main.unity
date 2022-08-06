@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,6 +121,113 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &43476728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43476729}
+  - component: {fileID: 43476731}
+  - component: {fileID: 43476730}
+  - component: {fileID: 43476732}
+  m_Layer: 5
+  m_Name: Bg (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &43476729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43476728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1169470630}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &43476730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43476728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: b0ae1158623b2394592a4a3fc65dec9a, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &43476731
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43476728}
+  m_CullTransparentMesh: 1
+--- !u!328 &43476732
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43476728}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: b0ae1158623b2394592a4a3fc65dec9a, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: file://D:/UnityProjects/KoalaTrivia/Assets/StreamingAssets/Koala Start Screen
+    Video Background.mp4
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!114 &48461293 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7219094412193472905, guid: 7f8b45a9f88315748839123c28f6fa9f,
@@ -1855,7 +1962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonSFXID: 0
-  HoverColor: {r: 0, g: 0, b: 0, a: 0}
+  HoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &353150704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3050172763924393888, guid: 7f8b45a9f88315748839123c28f6fa9f,
@@ -2628,89 +2735,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &510929893
-MonoBehaviour:
+--- !u!328 &510929893
+VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510929891}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ddbf24ca243ca48912f134d00b60cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: 1
-  URL: https://projectonlinevideos.s3.ap-southeast-2.amazonaws.com/Koala+Start+Screen+Video+Background.mp4
-  fileName: 
-  autoplay: 1
-  loop: 1
-  muted: 1
-  volume: 1
-  playbackSpeed: 1
-  targetTexture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
-  crossOrigin: 1
-  events: 32
-  canplay:
-    m_PersistentCalls:
-      m_Calls: []
-  canplaythrough:
-    m_PersistentCalls:
-      m_Calls: []
-  complete:
-    m_PersistentCalls:
-      m_Calls: []
-  durationchange:
-    m_PersistentCalls:
-      m_Calls: []
-  emptied:
-    m_PersistentCalls:
-      m_Calls: []
-  ended:
-    m_PersistentCalls:
-      m_Calls: []
-  loadeddata:
-    m_PersistentCalls:
-      m_Calls: []
-  loadedmetadata:
-    m_PersistentCalls:
-      m_Calls: []
-  pause:
-    m_PersistentCalls:
-      m_Calls: []
-  play:
-    m_PersistentCalls:
-      m_Calls: []
-  playing:
-    m_PersistentCalls:
-      m_Calls: []
-  progress:
-    m_PersistentCalls:
-      m_Calls: []
-  ratechange:
-    m_PersistentCalls:
-      m_Calls: []
-  seeked:
-    m_PersistentCalls:
-      m_Calls: []
-  seeking:
-    m_PersistentCalls:
-      m_Calls: []
-  stalled:
-    m_PersistentCalls:
-      m_Calls: []
-  suspend:
-    m_PersistentCalls:
-      m_Calls: []
-  timeupdate:
-    m_PersistentCalls:
-      m_Calls: []
-  volumechange:
-    m_PersistentCalls:
-      m_Calls: []
-  waiting:
-    m_PersistentCalls:
-      m_Calls: []
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 2b0c1df7ebeef0d4f9558fa0e7355eee, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: file://D:/UnityProjects/KoalaTrivia/Assets/StreamingAssets/Koala Start Screen
+    Video Background.mp4
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!114 &510929894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2730,7 +2789,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
+  m_Texture: {fileID: 8400000, guid: 2b0c1df7ebeef0d4f9558fa0e7355eee, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4973,7 +5032,7 @@ MonoBehaviour:
   Blurry: {fileID: 1387288450}
   CameraPath: {fileID: 1297402501}
   videoPlayer: {fileID: 114725868}
-  StartVideoPlayer: {fileID: 1557615514}
+  StartVideoPlayer: {fileID: 510929893}
   RightNum: 0
   CurrentMoney: 0
   CurrentQuestSequence: 0
@@ -9007,7 +9066,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1630752740}
-  - {fileID: 1964147804}
+  - {fileID: 43476729}
   - {fileID: 438910871}
   - {fileID: 1067588355}
   - {fileID: 1109199278}
@@ -9062,7 +9121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51.5, y: -45.2}
+  m_AnchoredPosition: {x: 51.5, y: -45.19995}
   m_SizeDelta: {x: 124, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198117755
@@ -9643,7 +9702,7 @@ PrefabInstance:
     - target: {fileID: 8011867701152972963, guid: 36bdc02b23d9ca94d93bd715c0cca5c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8011867701152972963, guid: 36bdc02b23d9ca94d93bd715c0cca5c0,
         type: 3}
@@ -12406,7 +12465,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -131}
-  m_SizeDelta: {x: 272.5552, y: 30.283913}
+  m_SizeDelta: {x: 282.77777, y: 31.666668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493922726
 MonoBehaviour:
@@ -15724,161 +15783,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1943751700}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1964147803
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1964147804}
-  - component: {fileID: 1964147807}
-  - component: {fileID: 1964147806}
-  - component: {fileID: 1964147805}
-  m_Layer: 5
-  m_Name: Bg (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1964147804
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964147803}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1169470630}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1964147805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964147803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ddbf24ca243ca48912f134d00b60cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: 1
-  URL: https://projectonlinevideos.s3.ap-southeast-2.amazonaws.com/Koala+Start+Screen+Video+Background.mp4
-  fileName: 
-  autoplay: 1
-  loop: 1
-  muted: 1
-  volume: 1
-  playbackSpeed: 1
-  targetTexture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
-  crossOrigin: 1
-  events: 32
-  canplay:
-    m_PersistentCalls:
-      m_Calls: []
-  canplaythrough:
-    m_PersistentCalls:
-      m_Calls: []
-  complete:
-    m_PersistentCalls:
-      m_Calls: []
-  durationchange:
-    m_PersistentCalls:
-      m_Calls: []
-  emptied:
-    m_PersistentCalls:
-      m_Calls: []
-  ended:
-    m_PersistentCalls:
-      m_Calls: []
-  loadeddata:
-    m_PersistentCalls:
-      m_Calls: []
-  loadedmetadata:
-    m_PersistentCalls:
-      m_Calls: []
-  pause:
-    m_PersistentCalls:
-      m_Calls: []
-  play:
-    m_PersistentCalls:
-      m_Calls: []
-  playing:
-    m_PersistentCalls:
-      m_Calls: []
-  progress:
-    m_PersistentCalls:
-      m_Calls: []
-  ratechange:
-    m_PersistentCalls:
-      m_Calls: []
-  seeked:
-    m_PersistentCalls:
-      m_Calls: []
-  seeking:
-    m_PersistentCalls:
-      m_Calls: []
-  stalled:
-    m_PersistentCalls:
-      m_Calls: []
-  suspend:
-    m_PersistentCalls:
-      m_Calls: []
-  timeupdate:
-    m_PersistentCalls:
-      m_Calls: []
-  volumechange:
-    m_PersistentCalls:
-      m_Calls: []
-  waiting:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1964147806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964147803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 0e647d24a207a8941b6784526b821ea7, type: 2}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1964147807
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964147803}
-  m_CullTransparentMesh: 1
 --- !u!1 &2048678762
 GameObject:
   m_ObjectHideFlags: 0
@@ -15914,7 +15818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 122.59961, y: -34.2}
+  m_AnchoredPosition: {x: 122.59961, y: -34.19995}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2048678764
