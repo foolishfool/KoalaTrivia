@@ -9,7 +9,7 @@ public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 {
 
     public int ButtonSFXID;
-
+    public bool IsNextButton;
     public Color HoverColor;
 
     private Vector3 initialScale;
@@ -29,7 +29,7 @@ public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     // When highlighted with mouse.
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (GameController.Instance.ButtonClicked)
+        if (GameController.Instance.ButtonClicked && !IsNextButton)
         {
             transform.localScale = initialScale;
             //GetComponent<Image>().color = Color.white;
@@ -49,7 +49,7 @@ public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (GameController.Instance.ButtonClicked)
+        if (GameController.Instance.ButtonClicked && !IsNextButton)
         {
             transform.localScale = initialScale;
             //GetComponent<Image>().color = Color.white;

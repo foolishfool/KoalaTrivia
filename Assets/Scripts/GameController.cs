@@ -226,7 +226,7 @@ public class GameController : MonoBehaviour
         UIManager.Instance.QNum.gameObject.SetActive(true);
         UIManager.Instance.QNum2.gameObject.SetActive(true);
         UIManager.Instance.QNum.text = "Q" + CurrentQuestSequence.ToString();
-        UIManager.Instance.QNum2.text =  CurrentQuestSequence.ToString() + "/15";
+        UIManager.Instance.QNum2.text = RightNum.ToString() + "/15";
 
         if (UIManager.Instance.OptionC.text == "")
             UIManager.Instance.OptionC.transform.parent.gameObject.SetActive(false);
@@ -370,7 +370,10 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         UIManager.Instance.PausePanelHide();
     }
-
+    public void GameEnd()
+    {
+        SceneManager.LoadScene(0);
+    }
     public void GameRestart()
     {
         UIManager.Instance.Endraphic.transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.5f, 5).OnComplete(() => UIManager.Instance.ResultPanel.SetActive(false));
@@ -388,8 +391,10 @@ public class GameController : MonoBehaviour
         UIManager.Instance.QNum.transform.parent.gameObject.SetActive(false);
         Time.timeScale = 1;
         UIManager.Instance.QNum2.gameObject.SetActive(false);
-        UIManager.Instance.QNum2.text = CurrentQuestSequence.ToString() + "1/15";
+        UIManager.Instance.QNum2.text = CurrentQuestSequence.ToString() + "0/15";
         UIManager.Instance.QNum2.color = Color.white;
+        AudioController.Instance.BackgourndFXAudioSource.Stop();
+        AudioController.Instance.BackgourndFXAudioSource.Play();
         // Scene scene = SceneManager.GetActiveScene();
         // SceneManager.LoadScene(scene.name);
     }
