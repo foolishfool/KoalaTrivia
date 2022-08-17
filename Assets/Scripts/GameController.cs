@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
     public VideoPlayer videoPlayer;
     public VideoPlayer StartVideoPlayer;
     //the number of answered right question
-    [HideInInspector]
+
     public int RightNum;
     public int CurrentMoney;
     //the sequence index number of current question
@@ -601,7 +601,7 @@ public class GameController : MonoBehaviour
         {
             if (isshow)
             {
-                UIManager.Instance.Buttons[i].transform.localScale = new Vector3(0.4282626f, 0.4282626f, 0.4282626f);
+                UIManager.Instance.Buttons[i].transform.localScale = new Vector3(0.6038074f, 0.6038074f, 0.6038074f);
             }
             else UIManager.Instance.Buttons[i].transform.localScale = Vector3.zero;
 
@@ -675,7 +675,7 @@ public class GameController : MonoBehaviour
     {
         for (int i = 0; i < UIManager.Instance.Buttons.Count; i++)
         {
-            UIManager.Instance.Buttons[i].transform.localScale = new Vector3(0.4282626f, 0.4282626f, 0.4282626f);
+            UIManager.Instance.Buttons[i].transform.localScale = new Vector3(0.6038074f, 0.6038074f, 0.6038074f);
             UIManager.Instance.Buttons[i].GetComponent<Button>().interactable = true;
             UIManager.Instance.Buttons[i].GetComponent<Image>().sprite = (Sprite)Resources.Load("Sprites/Button", typeof(Sprite));
             UIManager.Instance.Buttons[i].GetComponent<Button>().image.color = new Color(Color.white.r, Color.white.g, Color.white.b, 1f);

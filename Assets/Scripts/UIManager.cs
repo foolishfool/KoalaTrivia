@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.Video;
+using System.IO;
 
 public class UIManager : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class UIManager : MonoBehaviour
     public GameObject PausePanel;
     public GameObject StartPanel;
     public GameObject ResultPanel;
+    public GameObject EndPanel;
     public Button StartBg;
     public RollingNumbers RollingNumber;
     public Text CurrentQuestNum;
@@ -29,6 +32,8 @@ public class UIManager : MonoBehaviour
     public GameObject NextButton;
     public GameObject Stargraphic;
     public GameObject Endraphic;
+    public GameObject ResultVideo;
+    public VideoPlayer StartVideoPlayer;
     public Text OptionA;
     public Text OptionB;
     public Text OptionC;
@@ -73,6 +78,10 @@ public class UIManager : MonoBehaviour
     void Start()
     {
 
+        StartVideoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Koala Start Screen Video Background.mp4");
+        StartVideoPlayer.playOnAwake = true;
+        StartVideoPlayer.isLooping = true;
+        StartVideoPlayer.Play();
         if (GlobalVariable.Instance.IsLoaded)
         {
            // ReArrangeBgResource();
@@ -155,8 +164,18 @@ public class UIManager : MonoBehaviour
         ResultPanel.SetActive(true);
         GameController.Instance.PlayEndVideoPlayer();
         Endraphic.transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.5f, 5);
+        QNum2.text = GameController.Instance.RightNum.ToString() + "/15";
+        if (GameController.Instance.RightNum>=14)
+        {
+            ResultVideo.SetActive(true);
+        }
         SetInfoForResultPanel();
-        QNum2.color = UIManager.Instance.QuestionColor;
+        QNum2.color =QuestionColor;
+    }
+
+    public void EndGamePanelShow()
+    {
+        EndPanel.SetActive(true);
     }
     public void SetInfoForResultPanel()
     {
@@ -164,7 +183,7 @@ public class UIManager : MonoBehaviour
         ResultQuestDetails.text = "you got " + GameController.Instance.RightNum.ToString()+ "/15 correct!";
         if (GameController.Instance.RightNum == 15)
         {
-            ResultText.text = "Congratulations!! You are koalafied.";
+            ResultText.text = "You are koalafied.";
         }
         if (GameController.Instance.RightNum <= 14 && GameController.Instance.RightNum >= 12)
         {
